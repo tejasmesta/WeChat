@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5EE"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:orientation="horizontal"
+        android:id="@+id/chatListlinear"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/chat_list_profile"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/deafault_avatar"
+            >
+
+        </com.mikhaellopez.circularimageview.CircularImageView>
+
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/chat_list_username"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/chat_list_last_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hii"
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textAllCaps="false"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/chatslist_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textStyle="bold"
+                android:layout_marginRight="4dp"
+                android:padding="4dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/unread_circle"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/last_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00"
+                android:textAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+                android:layout_marginRight="4dp"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969"
+        >
+
+    </View>
+
+</LinearLayout>

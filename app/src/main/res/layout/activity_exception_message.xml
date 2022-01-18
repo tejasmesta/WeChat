@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFF5EE"
+    android:orientation="vertical"
+    tools:context=".exceptionMessage.ExceptionMessageActivity">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exception_page_progress"
+        >
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/exception_page_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your internet connectivity"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:onClick="retry"
+            android:id="@+id/exception_page_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Retry"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#2F4F4F"
+            >
+
+        </Button>
+
+        <Button
+            android:onClick="closeIt"
+            android:id="@+id/exception_page_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Close"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#2F4F4F"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
