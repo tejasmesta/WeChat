@@ -31,7 +31,7 @@ public class Util {
         }
     }
 
-    public static void deviceToken(Context context,String token)
+    public static void updateDeviceToken(Context context,String token)
     {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();

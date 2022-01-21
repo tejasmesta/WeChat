@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.iid.*;
-import com.google.firebase.iid.internal.FirebaseInstanceIdInternal;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -112,8 +112,11 @@ public class LoginActivity extends AppCompatActivity {
         if(firebaseUser!=null)
         {
 
+
             startActivity(new Intent(LoginActivity.this,MainActivity.class));
             finish();
         }
+
+
     }
 }
